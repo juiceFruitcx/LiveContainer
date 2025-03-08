@@ -107,7 +107,6 @@ struct LCAppBanner : View {
             .padding()
             .frame(idealWidth: 70)
             .frame(height: 32)
-            .fixedSize()
             .background(GeometryReader { g in
                 if !model.isSigningInProgress {
                     Capsule().fill(dynamicColors ? mainColor : Color("FontColor"))
